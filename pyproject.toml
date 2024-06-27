@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "daystovacation"
+version = "0.0.1"
+description = "一个用于计算距离假期还有多少时间的库（精确计算）"
+authors = ["XYCode Kerman <xycode-xyc@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpimport = "^1.3.1"
+holidays = "^0.42"
+apscheduler = "^3.10.4"
+rich = "^13.7.0"
+beautifulsoup4 = "^4.12.3"
+lxml = "^5.1.0"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "default"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
